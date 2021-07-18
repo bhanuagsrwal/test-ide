@@ -24,7 +24,7 @@ RUN apt-get -y install libx11-dev libxkbfile-dev
 # Install Node v10
 # ------------------------------------------------------------
 
-RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
 
 # ------------------------------------------------------------
