@@ -16,6 +16,7 @@ FROM ubuntu:18.04 AS builder
 # https://packages.ubuntu.com/bionic/build-essential
 
 RUN apt-get update && apt-get -y install curl xz-utils wget git sudo build-essential
+RUN apt-get install libx11-dev libxkbfile-dev
 
 # ------------------------------------------------------------
 # Install Node v10
